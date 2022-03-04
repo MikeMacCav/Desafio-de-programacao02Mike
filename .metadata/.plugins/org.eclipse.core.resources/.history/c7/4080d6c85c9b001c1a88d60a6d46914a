@@ -1,0 +1,23 @@
+package br.com.capgemini;
+import java.util.*;
+
+class Mediana {
+
+ public static double findMedian(int vetor[], int n) // Calculando mediana com a seguinte função
+ {
+  
+     	Arrays.sort(vetor);     
+     			if (n % 2 != 0)
+     				return (double)vetor[n / 2];
+
+     					return (double)(vetor[(n - 1) / 2] + vetor[n / 2]) / 2.0;
+ }
+
+ 
+ public static void main(String args[])
+ {
+     int vetor[] = { 9, 2, 1, 4, 6 };
+     int n = vetor.length;
+     System.out.println("Median = " + findMedian(vetor, n));
+ }
+}
