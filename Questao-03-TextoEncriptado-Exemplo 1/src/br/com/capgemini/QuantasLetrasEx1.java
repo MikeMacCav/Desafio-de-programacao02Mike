@@ -5,8 +5,9 @@ import javax.swing.JOptionPane;
 public class QuantasLetrasEx1 {
     public static void main(String[] args) {
         String frase = "tenha um bom dia";
-       
-		
+        System.out.println("A entrada do texto é: "+frase);
+        
+        String NovaFrase = frase.replace("tenha um bom dia", "taoa eum nmd hbi");	
      
         int TextoSemEspaco = frase.replaceAll(" ", "").length();
         System.out.println("Quantidade de letras sem espaço: " + TextoSemEspaco);
@@ -45,7 +46,8 @@ for (int i = 0; i < matriz.length; i++) {
 
 
 JOptionPane.showMessageDialog(null, sb.toString());
-System.out.print(frase);
+
+System.out.println("A saída do texto é: "+NovaFrase);
     
 }
 }

@@ -20,7 +20,7 @@ public static void main(String[] args) {
                 if (vetor[i1] - vetor[j] == X) { count++; }
             }
         }
-        System.out.println(count);
+        System.out.println("O número de elementos pares é: "+count);
     }
 }
 }

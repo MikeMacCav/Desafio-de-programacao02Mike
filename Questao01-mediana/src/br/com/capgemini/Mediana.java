@@ -15,6 +15,6 @@ class Mediana {
  {
      int vetor[] = {9, 2, 1, 4, 6};
      int n = vetor.length;
-     System.out.println("mediana = " + findmediana(vetor, n));
+     System.out.println("A mediana do vetor é = " + findmediana(vetor, n));
  }
 }

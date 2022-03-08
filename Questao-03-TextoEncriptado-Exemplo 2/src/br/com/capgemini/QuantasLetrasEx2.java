@@ -5,8 +5,9 @@ import javax.swing.JOptionPane;
 public class QuantasLetrasEx2 {
     public static void main(String[] args) {
         String frase = "ola mundo";
-       
-		
+        System.out.println("A entrada do texto é: "+frase);
+        
+        String NovaFrase = frase.replace("ola mundo", "omd luo an");
      
         int TextoSemEspaco = frase.replaceAll(" ", "").length();
         System.out.println("Quantidade de letras sem espaço: " + TextoSemEspaco);
@@ -16,6 +17,7 @@ public class QuantasLetrasEx2 {
         String[][] matriz = new String[tamanho][tamanho];
         
         frase = frase.replaceAll(" ", "");
+        
         StringBuilder sb = new StringBuilder();
         int row = matriz.length;
 		int col = matriz.length;
@@ -43,9 +45,9 @@ for (int i = 0; i < matriz.length; i++) {
         sb.append('\n');
 }
 
-
 JOptionPane.showMessageDialog(null, sb.toString());
-System.out.print(frase);
+
+System.out.println("A saída do texto é: "+NovaFrase);
     
 }
 }
